@@ -8,17 +8,48 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 <body>
-    <div class="container mt-5">
-        <h1 class="text-center">Package Tracker</h1>
-        <form id="trackingForm" class="my-4">
-            <div class="mb-3">
-                <label for="trackingIds" class="form-label">Tracking Numbers (comma-separated):</label>
-                <input type="text" id="trackingIds" class="form-control" placeholder="Enter tracking IDs">
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Package Tracker</a>
+            <ul class="navbar-nav me-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">All</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Not Found</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">In Transit</a>
+                </li>
+                <!-- Add more tabs as needed -->
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="container-fluid mt-3">
+        <div class="row">
+            <!-- Left Panel: Shipment Details -->
+            <div class="col-lg-9 col-md-8">
+                <div id="shipmentResults" class="d-flex flex-column gap-3">
+                    <!-- Placeholder for shipment cards -->
+                </div>
             </div>
-            <button type="button" id="trackButton" class="btn btn-primary w-100">Track Packages</button>
-        </form>
-        <div id="results" class="mt-4"></div>
+
+            <!-- Right Panel: Tracking Input -->
+            <div class="col-lg-3 col-md-4">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Track Your Packages</h5>
+                        <textarea id="trackingIds" class="form-control mb-3" rows="5" placeholder="Enter tracking IDs, one per line"></textarea>
+                        <button id="trackButton" class="btn btn-primary w-100">Track</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
 </body>

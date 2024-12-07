@@ -1,13 +1,116 @@
+/* General Styling */
 body {
-    background-color: #f8f9fa;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
 }
-h1 {
-    font-size: 2.5rem;
-    color: #007bff;
+
+/* Navbar */
+.navbar {
+    margin-bottom: 20px;
 }
-#results {
-    background: #fff;
+
+/* Shipment Cards */
+#shipmentResults .card {
+    background: #ffffff;
+    border: 1px solid #ddd;
     border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
+    padding: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Shipment Details */
+.hidden {
+    display: none;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+    margin-top: 10px;
+}
+
+.details {
+    font-size: 14px;
+    color: #555;
+}
+
+.details ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.details ul li {
+    margin-bottom: 5px;
+}
+
+/* Status Indicators */
+.status-icon {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.status-in-transit {
+    background-color: #ffc107; /* Yellow */
+}
+
+.status-not-found {
+    background-color: #dc3545; /* Red */
+}
+
+.status-delivered {
+    background-color: #28a745; /* Green */
+}
+
+/* Shipment Details */
+.card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.card-header {
+    background-color: #f8f9fa;
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.card-body {
+    padding: 15px;
+    font-size: 14px;
+    background-color: #ffffff;
+}
+
+.card-body.hidden {
+    display: none;
+}
+
+.shipment-details p {
+    margin: 5px 0;
+}
+
+.shipment-details ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+
+.shipment-details ul li {
+    padding: 5px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.shipment-details ul li:last-child {
+    border-bottom: none;
+}
+
+.shipment-details ul li span {
+    color: #6c757d;
+    font-size: 12px;
+}
+
+.badge {
+    font-size: 12px;
+    padding: 5px 10px;
 }

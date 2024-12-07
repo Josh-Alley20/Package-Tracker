@@ -37,8 +37,6 @@ def display_shipment_details(shipments):
 apiKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1aWQiOiI1YTA0OGZhMC1iNDI2LTExZWYtYmY4Ny1hNzVhMDRjYzU5MzUiLCJzdWJJZCI6IjY3NTM4MmQ0Y2JmZmM3Njg1MWM3ZjU5MCIsImlhdCI6MTczMzUyNjIyOH0.KrYGim89rBlCWjsJ6FZEINH01I56H6K5vT6Nam1t0cA'
 trackingUrl = 'https://parcelsapp.com/api/v3/shipments/tracking'
 shipments = [
-    {'trackingId': 'EB829584702CN', 'language': 'en', 'country': 'United States'},
-    {'trackingId': 'AT586741204CN', 'language': 'en', 'country': 'United States'},
     {'trackingId': 'UJ841593631YP', 'language': 'en', 'country': 'United States'},
 ]
 
